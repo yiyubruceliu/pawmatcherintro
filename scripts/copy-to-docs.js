@@ -30,13 +30,36 @@ function copyRecursiveSync(src, dest) {
     if (src.endsWith('.html')) {
       let content = fs.readFileSync(src, 'utf8');
       // Convert absolute paths to relative paths for GitHub Pages
-      // Replace /_next/ with ./_next/ and /filename with ./filename
-      // Match href="/path" and replace with href="./path"
+      // This needs to fix paths in:
+      // 1. HTML attributes (href="/..." src="/...")
+      // 2. JSON strings in embedded scripts ("href":"/..." "src":"/...")
+      
+      // Fix HTML attributes
       content = content.replace(/href="\/([^"]+)"/g, 'href="./$1"');
-      // Match src="/path" and replace with src="./path"
       content = content.replace(/src="\/([^"]+)"/g, 'src="./$1"');
-      // Also handle src='/path' format
       content = content.replace(/src='\/([^']+)'/g, "src='./$1'");
+      
+      // Fix JSON strings in embedded JavaScript
+      // Pattern: "href":"/path" or "src":"/path" (need to handle escaped quotes)
+      // Use a more comprehensive pattern that catches paths starting with /
+      content = content.replace(/"href":"\/([^"]+)"/g, '"href":"./$1"');
+      content = content.replace(/"src":"\/([^"]+)"/g, '"src":"./$1"');
+      
+      // Also handle escaped JSON: \"href\":\"/path\" 
+      content = content.replace(/\\"href\\":\\"\/([^"]+)\\"/g, '\\"href\\":\\"./$1\\"');
+      content = content.replace(/\\"src\\":\\"\/([^"]+)\\"/g, '\\"src\\":\\"./$1\\"');
+      
+      // Fix Next.js internal path references in script tags (various formats)
+      content = content.replace(/":HL\["\/_next\//g, '":HL["./_next/');
+      content = content.replace(/":HL\["/g, function(match) {
+        return match.replace('":HL["/', '":HL["./');
+      });
+      
+      // Also fix any remaining "/_next/ or "/filename patterns in JSON strings
+      // This is a catch-all for any absolute paths we might have missed
+      content = content.replace(/"\/([a-zA-Z0-9_-]+\.(jpg|png|svg|mp4|ico|woff2|css|js))"/g, '"./$1"');
+      content = content.replace(/"\/_next\//g, '"./_next/');
+      content = content.replace(/\\"\/_next\\\//g, '\\"./_next\\/');
       
       fs.writeFileSync(dest, content, 'utf8');
     } else if (src.endsWith('.css')) {
