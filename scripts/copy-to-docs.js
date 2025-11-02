@@ -78,6 +78,12 @@ function copyRecursiveSync(src, dest) {
 }
 
 copyRecursiveSync(sourceDir, targetDir);
+
+// Create .nojekyll file so GitHub Pages serves _next folder
+const nojekyllPath = path.join(targetDir, '.nojekyll');
+fs.writeFileSync(nojekyllPath, '', 'utf8');
+
 console.log('✓ Successfully copied build output to docs/ folder');
 console.log('✓ Fixed all paths for GitHub Pages deployment');
+console.log('✓ Created .nojekyll file for GitHub Pages');
 
