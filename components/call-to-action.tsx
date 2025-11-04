@@ -33,7 +33,7 @@ export function CallToAction() {
               className="w-full rounded-full bg-[#69c3c3] px-8 py-6 text-lg font-bold uppercase text-white transition-all hover:scale-105 hover:bg-[#321478]"
               asChild
             >
-              <a href="https://forms.google.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://forms.gle/wAyoTDQTxq1pwTz69" target="_blank" rel="noopener noreferrer">
                 {"Sign Up Now"}
               </a>
             </Button>
@@ -60,7 +60,7 @@ export function CallToAction() {
               className="w-full rounded-full bg-[#321478] px-8 py-6 text-lg font-bold uppercase text-white transition-all hover:scale-105 hover:bg-[#6450b4]"
               asChild
             >
-              <a href="https://gofundme.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://gofund.me/0c914a7d8" target="_blank" rel="noopener noreferrer">
                 {"Donate Now"}
               </a>
             </Button>

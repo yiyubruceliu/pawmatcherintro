@@ -44,7 +44,7 @@ export function Hero() {
               className="rounded-full border-4 border-[#321478] bg-white px-8 py-6 text-lg font-bold uppercase text-[#321478] transition-all hover:scale-105 hover:bg-[#d7d2f0]"
               asChild
             >
-              <a href="#donate">{"Support Our Mission"}</a>
+              <a href="https://gofund.me/0c914a7d8" target="_blank" rel="noopener noreferrer">{"Support Our Mission"}</a>
             </Button>
           </div>
         </div>
