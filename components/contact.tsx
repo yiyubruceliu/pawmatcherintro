@@ -44,9 +44,12 @@ export function Contact() {
               <Button
                 size="lg"
                 className="flex items-center gap-2 rounded-full bg-[#69c3c3] px-6 py-6 font-bold uppercase text-white transition-all hover:scale-110 hover:bg-[#321478]"
+                asChild
               >
-                <Linkedin className="h-5 w-5" />
-                {"LinkedIn"}
+                <a href="https://www.linkedin.com/company/109995891" target="_blank" rel="noopener noreferrer">
+                  <Linkedin className="h-5 w-5" />
+                  {"LinkedIn"}
+                </a>
               </Button>
             </div>
           </div>
