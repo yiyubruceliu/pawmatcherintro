@@ -14,6 +14,11 @@ export const metadata: Metadata = {
   title: "Paw Matcher - Love at First Swipe",
   description: "Helping shelter dogs find their forever homes through smart matching technology",
   generator: "v0.app",
+  icons: {
+    icon: "/PawMatcher-Logo4.svg",
+    shortcut: "/PawMatcher-Logo4.svg",
+    apple: "/PawMatcher-Logo4.svg",
+  },
 }
 
 export default function RootLayout({
