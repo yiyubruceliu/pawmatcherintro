@@ -37,9 +37,12 @@ export function Contact() {
               <Button
                 size="lg"
                 className="flex items-center gap-2 rounded-full bg-[#321478] px-6 py-6 font-bold uppercase text-white transition-all hover:scale-110 hover:bg-[#6450b4]"
+                asChild
               >
-                <Instagram className="h-5 w-5" />
-                {"Instagram"}
+                <a href="https://www.instagram.com/pawmatcher.app" target="_blank" rel="noopener noreferrer">
+                  <Instagram className="h-5 w-5" />
+                  {"Instagram"}
+                </a>
               </Button>
               <Button
                 size="lg"
