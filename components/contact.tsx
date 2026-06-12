@@ -1,5 +1,6 @@
 import { Mail, MessageCircle, Instagram, Linkedin } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { SiteFooter } from "@/components/site-footer"
 
 export function Contact() {
   return (
@@ -58,12 +59,7 @@ export function Contact() {
           </div>
         </div>
 
-        {/* Footer */}
-        <div className="mt-16 text-center">
-          <p className="font-sans text-sm font-semibold text-[#6450b4]">
-            {"© 2025 Paw Matcher. All rights reserved. Made with 💜 for dogs everywhere."}
-          </p>
-        </div>
+        <SiteFooter />
       </div>
     </section>
   )

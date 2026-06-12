@@ -1,0 +1,20 @@
+User-Agent: *
+Allow: /
+
+User-Agent: GPTBot
+Allow: /
+
+User-Agent: ChatGPT-User
+Allow: /
+
+User-Agent: Claude-Web
+Allow: /
+
+User-Agent: PerplexityBot
+Allow: /
+
+User-Agent: Google-Extended
+Allow: /
+
+Host: https://www.pawmatcher.app
+Sitemap: https://www.pawmatcher.app/sitemap.xml

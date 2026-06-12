@@ -17,7 +17,14 @@ export default function Product() {
             <div className="relative">
               {/* Phone Frame */}
               <div className="relative h-[600px] w-[300px] overflow-hidden rounded-[3rem] border-8 border-[#321478] bg-[#d7d2f0] shadow-2xl">
-                <video className="h-full w-full object-cover" autoPlay loop muted playsInline>
+                <video
+                  className="h-full w-full object-cover"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  aria-label="Paw Matcher app demo showing dog profile swiping"
+                >
                   <source src={assetPath("/phone-demo.mp4")} type="video/mp4" />
                 </video>
               </div>

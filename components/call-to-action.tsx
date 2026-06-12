@@ -24,17 +24,17 @@ export function CallToAction() {
                 </svg>
               </div>
             </div>
-            <h3 className="mb-3 font-sans text-3xl font-black uppercase text-[#321478]">{"Early Access"}</h3>
+            <h3 className="mb-3 font-sans text-3xl font-black uppercase text-[#321478]">{"Try Paw Matcher"}</h3>
             <p className="mb-6 font-sans text-lg font-semibold text-[#6450b4]">
-              {"Be among the first to use Paw Matcher when we launch. Sign up for exclusive early access."}
+              {"Paw Matcher is live. Swipe through shelter dogs and find your perfect match today."}
             </p>
             <Button
               size="lg"
               className="w-full rounded-full bg-[#69c3c3] px-8 py-6 text-lg font-bold uppercase text-white transition-all hover:scale-105 hover:bg-[#321478]"
               asChild
             >
-              <a href="https://forms.gle/wAyoTDQTxq1pwTz69" target="_blank" rel="noopener noreferrer">
-                {"Sign Up Now"}
+              <a href="https://swipe.pawmatcher.app" target="_blank" rel="noopener noreferrer">
+                {"Start Swiping"}
               </a>
             </Button>
           </div>

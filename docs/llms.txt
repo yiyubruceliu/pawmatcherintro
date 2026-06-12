@@ -1,0 +1,35 @@
+# Paw Matcher
+
+> Paw Matcher helps shelter dogs find forever homes through smart matching technology. Swipe through adoptable dogs from European shelters, get personalized matches, and connect with adoption partners.
+
+## What is Paw Matcher?
+
+Paw Matcher is a web app that makes dog adoption easier by letting people swipe through shelter dog profiles, receive smart match suggestions based on lifestyle and experience, and message shelters and adoption organizations directly.
+
+## Key facts
+
+- Mission: Help every shelter dog find a forever home
+- Product: Live at https://swipe.pawmatcher.app
+- Website: https://www.pawmatcher.app
+- Contact: info@pawmatchers.app
+- Region: European shelter dogs
+- Pricing: Free for adopters
+
+## How it works
+
+1. Swipe through dog profiles from shelters across Europe
+2. Get matched with dogs that fit your lifestyle, home, and experience
+3. Connect with shelters and adoption partners through the app
+
+## Team
+
+- Yi-Yu (Bruce) Liu — Tech Founder
+- Iva Bosotina — Operations Founder
+
+## Links
+
+- App: https://swipe.pawmatcher.app
+- Website: https://www.pawmatcher.app
+- Instagram: https://www.instagram.com/pawmatcher.app
+- LinkedIn: https://www.linkedin.com/company/109995891
+- Support / donate: https://gofund.me/0c914a7d8
