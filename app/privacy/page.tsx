@@ -3,7 +3,7 @@ import { LegalPage, LegalSection } from "@/components/legal-page"
 import { SiteFooter } from "@/components/site-footer"
 import { appUrl, contactEmail, siteName, siteUrl } from "@/lib/site"
 
-const lastUpdated = "12 June 2026"
+const lastUpdated = "18 September 2026"
 
 export const metadata: Metadata = {
   title: "Privacy Policy",
@@ -24,8 +24,9 @@ export default function PrivacyPage() {
         <p>
           This Privacy Policy explains how {siteName} (&quot;we&quot;, &quot;us&quot;, or
           &quot;our&quot;) collects and processes personal data when you use our website at{" "}
-          <a href={siteUrl}>{siteUrl}</a> and our web application at{" "}
-          <a href={appUrl}>{appUrl}</a> (together, the &quot;Services&quot;).
+          <a href={siteUrl}>{siteUrl}</a>, our web application at{" "}
+          <a href={appUrl}>{appUrl}</a>, and our mobile application (together, the
+          &quot;Services&quot;).
         </p>
         <p>
           We process personal data in accordance with the General Data Protection Regulation
@@ -45,22 +46,34 @@ export default function PrivacyPage() {
           <p>Depending on how you use the Services, we may collect the following categories of data:</p>
           <ul className="list-disc space-y-2 pl-6">
             <li>
-              <strong>Account and profile data:</strong> name, email address, password (stored in
-              hashed form), profile preferences, and adoption-related preferences you provide in
-              the app.
+              <strong>Account and authentication data:</strong> name, email address, password
+              (stored in hashed form), country and city, and email verification or password-reset
+              codes. We currently offer email-and-password registration only (no social login).
             </li>
             <li>
-              <strong>Usage and interaction data:</strong> swipes, matches, favourites, in-app
-              activity, and messages you send to shelters or adoption partners through the
-              platform.
+              <strong>Profile and adoption preference data:</strong> phone number, bio, profile
+              photo, uploaded documents (such as references or adoption-related files), lifestyle
+              preferences, and living-condition information you choose to provide (for example
+              housing type, yard, other pets, household children and their ages, dog experience,
+              work schedule, employment status, and income range).
             </li>
             <li>
-              <strong>Technical data:</strong> IP address, browser type, device information,
-              operating system, and log data generated when you access the Services.
+              <strong>Location data:</strong> city/country you enter and, where you use map or
+              location features, approximate coordinates derived from geocoding.
             </li>
             <li>
-              <strong>Communication data:</strong> information you send when you contact us by
-              email or through support channels.
+              <strong>Usage and interaction data:</strong> swipes (likes and dislikes), matches,
+              favourites or pins, and in-app activity related to browsing adoptable dogs.
+            </li>
+            <li>
+              <strong>Communication data:</strong> messages you send to shelters or adoption
+              partners through the app, and messages or emails you send us for support. Shelter
+              replies may be received by email and shown in your in-app chat.
+            </li>
+            <li>
+              <strong>Technical data:</strong> IP address and device or browser information
+              (including for security events such as admin login alerts), session tokens, and
+              standard server logs generated when you access the Services.
             </li>
             <li>
               <strong>Cookie and similar technology data:</strong> as described in Section 9
@@ -69,9 +82,9 @@ export default function PrivacyPage() {
           </ul>
           <p>
             We do not intentionally collect special categories of personal data (such as health
-            data) unless you voluntarily provide such information in communications with shelters
-            or in your profile. Please only share information that is necessary for adoption
-            purposes.
+            data) unless you voluntarily provide such information in your profile or in
+            communications with shelters. Please only share information that is necessary for
+            adoption purposes.
           </p>
         </LegalSection>
 
@@ -80,17 +93,18 @@ export default function PrivacyPage() {
           <ul className="list-disc space-y-2 pl-6">
             <li>
               <strong>Performance of a contract (Art. 6(1)(b)):</strong> to create and manage
-              your account, provide matching features, and facilitate communication with adoption
-              partners.
+              your account, verify your email, provide matching and messaging features, and
+              facilitate contact with adoption partners.
             </li>
             <li>
               <strong>Legitimate interests (Art. 6(1)(f)):</strong> to improve and secure the
-              Services, prevent fraud and abuse, analyse aggregated usage, and communicate about
-              important service updates — balanced against your rights and freedoms.
+              Services, prevent fraud and abuse, operate email bridging with shelters, analyse
+              aggregated usage, and communicate important service updates — balanced against your
+              rights and freedoms.
             </li>
             <li>
               <strong>Consent (Art. 6(1)(a)):</strong> for optional marketing communications and
-              non-essential cookies where required. You may withdraw consent at any time.
+              any non-essential cookies where required. You may withdraw consent at any time.
             </li>
             <li>
               <strong>Legal obligation (Art. 6(1)(c)):</strong> where we must comply with
@@ -107,6 +121,11 @@ export default function PrivacyPage() {
             human involvement in the adoption process itself.
           </p>
           <p>
+            We may also use automated tools to help classify or translate shelter communications
+            so they can be shown in the app. Final adoption decisions remain with the relevant
+            shelter or adoption partner.
+          </p>
+          <p>
             You have the right to object to profiling used for direct marketing and, in certain
             cases, to request human review of automated decisions that significantly affect you.
             Contact us at <a href={`mailto:${contactEmail}`}>{contactEmail}</a> to exercise this
@@ -118,28 +137,46 @@ export default function PrivacyPage() {
           <p>We may share personal data with:</p>
           <ul className="list-disc space-y-2 pl-6">
             <li>
-              <strong>Adoption partners and shelters</strong> when you express interest in a dog or
-              initiate contact through the app.
+              <strong>Adoption partners and shelters</strong> when you express interest in a dog
+              or initiate contact through the app. Depending on what you have provided, this may
+              include your name, email, phone number, location, bio, living conditions,
+              preferences, documents, and profile photo, as well as the content of your messages.
+              Message content may be sent by email to the shelter, and shelter replies may be
+              retrieved by email into your chat.
             </li>
             <li>
-              <strong>Service providers (processors)</strong> who help us host, operate, analyse,
-              or support the Services (e.g. cloud hosting, email delivery, analytics), under
-              data processing agreements that meet GDPR requirements.
+              <strong>Shelter data providers</strong> such as Animal Care Austria, which supply
+              adoptable dog listings that appear in the Services.
+            </li>
+            <li>
+              <strong>Service providers (processors)</strong> who help us host, operate, or
+              support the Services — including cloud hosting, database hosting, email delivery,
+              and map/geocoding providers — under arrangements that meet GDPR requirements where
+              applicable.
             </li>
             <li>
               <strong>Authorities</strong> where required by law or to protect rights, safety, and
               security.
             </li>
           </ul>
+          <p>
+            Other users of the app cannot browse your profile. Matching is between you and
+            adoptable dogs / shelters, not between end users.
+          </p>
           <p>We do not sell your personal data.</p>
         </LegalSection>
 
         <LegalSection title="6. International transfers">
           <p>
-            Your data is primarily processed within the European Economic Area (EEA). If we
-            transfer personal data outside the EEA or UK, we ensure appropriate safeguards are in
-            place, such as Standard Contractual Clauses approved by the European Commission or an
-            adequacy decision, unless another valid transfer mechanism applies.
+            Our application infrastructure is primarily hosted in Switzerland (currently on
+            Exoscale in the Geneva region). Database and email providers may process data in the
+            EEA, Switzerland, or other countries depending on configuration.
+          </p>
+          <p>
+            If we transfer personal data outside the EEA, UK, or Switzerland to a country without
+            an adequacy decision, we ensure appropriate safeguards are in place, such as Standard
+            Contractual Clauses approved by the European Commission, unless another valid transfer
+            mechanism applies.
           </p>
         </LegalSection>
 
@@ -149,10 +186,15 @@ export default function PrivacyPage() {
             this policy, including to comply with legal obligations and resolve disputes.
           </p>
           <ul className="list-disc space-y-2 pl-6">
-            <li>Account data is kept while your account is active.</li>
+            <li>Account and profile data is kept while your account is active.</li>
             <li>
-              After account deletion, we delete or anonymise personal data within a reasonable
-              period, except where retention is required by law or for legitimate legal claims.
+              After you delete your account, we delete or anonymise personal data held in our
+              systems within a reasonable period, except where retention is required by law or for
+              legitimate legal claims.
+            </li>
+            <li>
+              Information already shared with shelters by email (including interest notifications
+              and chat messages) may remain in their inboxes outside our control.
             </li>
             <li>Technical logs are typically retained for a limited period for security purposes.</li>
           </ul>
@@ -160,8 +202,8 @@ export default function PrivacyPage() {
 
         <LegalSection title="8. Your rights under the GDPR">
           <p>
-            If you are in the EEA, UK, or another jurisdiction with similar rights, you may have
-            the right to:
+            If you are in the EEA, UK, Switzerland, or another jurisdiction with similar rights,
+            you may have the right to:
           </p>
           <ul className="list-disc space-y-2 pl-6">
             <li>Access your personal data and receive a copy (Art. 15)</li>
@@ -185,7 +227,8 @@ export default function PrivacyPage() {
             </li>
           </ul>
           <p>
-            To exercise your rights, email{" "}
+            You can update much of your profile data in the app, and you may delete your account
+            from your profile settings where available. To exercise your rights, email{" "}
             <a href={`mailto:${contactEmail}`}>{contactEmail}</a>. We will respond within one
             month, as required by the GDPR, and may request information to verify your identity.
           </p>
@@ -193,30 +236,39 @@ export default function PrivacyPage() {
 
         <LegalSection title="9. Cookies and similar technologies">
           <p>
-            We use essential cookies and similar technologies that are necessary for the Services
-            to function (e.g. authentication and security). Where we use non-essential cookies
-            (such as analytics or marketing), we will request your consent before placing them,
-            in line with the ePrivacy Directive and applicable national laws.
+            On the web application we use essential cookies and similar technologies necessary for
+            the Services to function — in particular authentication session cookies. The mobile
+            app stores session tokens locally on your device instead of cookies.
           </p>
           <p>
-            You can manage cookie preferences through your browser settings and, where available,
-            through our cookie consent tool in the app. Blocking essential cookies may affect how
-            the Services work.
+            We do not currently use third-party advertising or analytics cookies on the swipe
+            application. Map and geocoding features may load content from OpenStreetMap /
+            Nominatim, which can involve network requests from your browser or device.
+          </p>
+          <p>
+            Where we introduce non-essential cookies (such as analytics or marketing) in the
+            future, we will request your consent before placing them, in line with the ePrivacy
+            Directive and applicable national laws. You can manage cookies through your browser
+            settings; blocking essential cookies may affect how the Services work.
           </p>
         </LegalSection>
 
         <LegalSection title="10. Children">
           <p>
             The Services are not directed at children under 16. We do not knowingly collect
-            personal data from children under 16 without parental consent. If you believe we have
-            collected data from a child, please contact us and we will take steps to delete it.
+            personal data from children under 16 without parental consent. Profile questions about
+            household children (for example ages of children living with you) relate to adoption
+            suitability and are about your household, not registration of child users. If you
+            believe we have collected data from a child user, please contact us and we will take
+            steps to delete it.
           </p>
         </LegalSection>
 
         <LegalSection title="11. Security">
           <p>
             We implement appropriate technical and organisational measures to protect personal
-            data against unauthorised access, alteration, disclosure, or destruction. No method of
+            data against unauthorised access, alteration, disclosure, or destruction, including
+            hashed passwords, HTTPS, and access controls for administrative accounts. No method of
             transmission over the internet is completely secure, and we cannot guarantee absolute
             security.
           </p>

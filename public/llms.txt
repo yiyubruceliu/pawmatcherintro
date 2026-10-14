@@ -11,7 +11,7 @@ Paw Matcher is a web app that makes dog adoption easier by letting people swipe 
 - Mission: Help every shelter dog find a forever home
 - Product: Live at https://swipe.pawmatcher.app
 - Website: https://www.pawmatcher.app
-- Contact: info@pawmatchers.app
+- Contact: info@pawmatcher.app
 - Region: European shelter dogs
 - Pricing: Free for adopters
 

@@ -18,10 +18,10 @@ export function Contact() {
           <div className="flex items-center justify-center gap-4 rounded-3xl bg-white p-6">
             <Mail className="h-8 w-8 text-[#321478]" />
             <a
-              href="mailto:info@pawmatchers.app"
+              href="mailto:info@pawmatcher.app"
               className="font-sans text-xl font-bold text-[#321478] transition-colors hover:text-[#6450b4]"
             >
-              {"info@pawmatchers.app"}
+              {"info@pawmatcher.app"}
             </a>
           </div>
 

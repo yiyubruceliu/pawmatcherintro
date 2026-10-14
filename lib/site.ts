@@ -19,7 +19,7 @@ export const siteKeywords = [
   "dog shelter",
 ]
 
-export const contactEmail = "info@pawmatchers.app"
+export const contactEmail = "info@pawmatcher.app"
 
 export const socialLinks = {
   instagram: "https://www.instagram.com/pawmatcher.app",
